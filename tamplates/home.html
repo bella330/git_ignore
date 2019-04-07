@@ -1,0 +1,10 @@
+<!-- home.html -->
+<h1 style="color:cornflowerblue; font-size: 50;"> Wordcount Application</h1>
+
+<a href="{% url 'about' %}">ABOUT</a>
+
+<form action="{% url 'result' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
